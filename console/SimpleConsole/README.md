@@ -9,8 +9,7 @@
   ```bash
   dotnet user-secrets init
 
-  dotnet user-secrets set "OpenAI:ModelId" "..."
-  dotnet user-secrets set "OpenAI:ChatModelId" "..."
-  dotnet user-secrets set "OpenAI:EmbeddingModelId" "..."
-  dotnet user-secrets set "OpenAI:ApiKey" "..."
+  dotnet user-secrets set "AOAI:ModelId" "..."
+  dotnet user-secrets set "AOAI:ApiKey" "..."
+  dotnet user-secrets set "AOAI:Endpoint" "..."
   ```
