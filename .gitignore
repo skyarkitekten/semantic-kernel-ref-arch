@@ -1,0 +1,32 @@
+# Ignore Python notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment folders
+env/
+venv/
+ENV/
+VENV/
+
+# Ignore Jupyter Notebook files
+*.ipynb
+
+# Ignore C# build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
