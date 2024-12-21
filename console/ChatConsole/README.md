@@ -1,10 +1,10 @@
-# SimpleConsole
+# Chat Console
 
-- creates a simple console application that creates a Semantic Kernel client and runs a hard-coded query.
+- creates a console application that creates a Semantic Kernel client and runs chat dialog between the user and Azure OpenAI.
 
 ## Getting Started
 
-- set secrets in `SimpleConsole.csproj` using .NET User Secrets
+- set secrets in `ChatConsole.csproj` using .NET User Secrets
 
   ```bash
   dotnet user-secrets init
@@ -13,3 +13,4 @@
   dotnet user-secrets set "AOAI:ApiKey" "..."
   dotnet user-secrets set "AOAI:Endpoint" "..."
   ```
+
