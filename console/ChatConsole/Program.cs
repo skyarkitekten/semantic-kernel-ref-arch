@@ -24,6 +24,7 @@ internal class Program
         // Configure the kernel
         builder.AddAzureOpenAIChatCompletion(modelId, endpoint, apiKey);
 
+
         // Add services
         builder.Services.AddLogging(services =>
             services.AddConsole().SetMinimumLevel(LogLevel.Trace));
@@ -34,19 +35,20 @@ internal class Program
         var chatCompletionService = kernel.Services.GetRequiredService<IChatCompletionService>();
         var chatHistory = new ChatHistory();
 
+
         string? userInput;
 
         do
         {
             Console.Write("User > ");
-            userInput = Console.ReadLine();
+            userInput = Console.ReadLine() ?? string.Empty;
             chatHistory.AddUserMessage(userInput);
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
 
             var result = await chatCompletionService.GetChatMessageContentAsync(chatHistory);
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("Assistant > " + result);
             Console.ResetColor();
-            chatHistory.AddAssistantMessage(result.Content);
+            chatHistory.AddAssistantMessage(result?.Content ?? "I'm sorry, I don't have an answer for that.");
 
         } while (userInput != null);
 

@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "console", "console", "{DCC8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleConsole", "console\SimpleConsole\SimpleConsole.csproj", "{97B78E70-3292-479A-B3CD-0B7C86B793CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatConsole", "console\ChatConsole\ChatConsole.csproj", "{AD578400-7FF8-450E-A300-C5E46399FE77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{97B78E70-3292-479A-B3CD-0B7C86B793CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B78E70-3292-479A-B3CD-0B7C86B793CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B78E70-3292-479A-B3CD-0B7C86B793CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD578400-7FF8-450E-A300-C5E46399FE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD578400-7FF8-450E-A300-C5E46399FE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD578400-7FF8-450E-A300-C5E46399FE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD578400-7FF8-450E-A300-C5E46399FE77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{97B78E70-3292-479A-B3CD-0B7C86B793CF} = {DCC85909-87C7-4BDF-B24B-FEB0061FC783}
+		{AD578400-7FF8-450E-A300-C5E46399FE77} = {DCC85909-87C7-4BDF-B24B-FEB0061FC783}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C96FC179-73B6-43CC-BFD7-73121AE3E6AB}
